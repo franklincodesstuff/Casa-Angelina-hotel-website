@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">    
+    <head class="fade-in">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>location</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
+        <body class="fade-in">
+            <header>
+                <button id="menu-toggle" class="menu-btn">&#9776;</button>
+                <nav id="nav-links">
+                <button id="close-btn" class="close-btn">&times;</button>  
+                  <a href="/index.html">Hotel at a glance</a>
+                  <a href="/location.html">location</a>
+                  <a href="/suites.html">Suites</a>
+                  <a href="/suites.html" class="submenu">-Angelina Suite</a>
+                  <a href="/Azure.html" class="submenu">-Azure Suite</a>
+                    <a href="/Vermarine.html" class="submenu">-Vermarine Suite</a>
+                  <a href="/grand de luxe.html">Rooms</a>
+                  <a href="/grand de luxe.html" class="submenu">- grand de luxe</a>
+                  <a href="/deluxe corner sea view.html" class="submenu">- deluxe corner sea view</a>
+                    <a href="/relaxing.html" class="submenu">-relaxing</a>
+                    <a href="/classic.html" class="submenu">-classic</a>
+                  <a href="/taste.html">Dining</a>
+                  <a href="/taste.html" class="submenu">-tastes</a>
+                    <a href="/breakfast.html" class="submenu">-breakfast</a>
+                    <a href="/seascape casual dining.html" class="submenu">-seascape casual dining</a>
+                    <a href="/wine cellar.html" class="submenu">-wine cellar</a>
+                </nav>
+            </header>
+<h2 class="location">Azure Suite</h1>
+<h3 class="oasis">launched in April 2023</h2>
+    <div id="imganimation">
+    <img src="https://hotelstclair.com/wp-content/uploads/2015/09/Executive-Ocean-VIew-Room-3.jpg" alt="angelina-suite" class="oceanview">
+    </div>
+    <h1 class="Azure-suite">Design-driven luxury created by Italian interiors expert
+        Paola Lenti.</h1>
+    <div class="sidebar">
+    <p class="gem">Newly launched in 2023, the Azure Suite is a one-of-a-kind, immersive design experience curated by renowned interior designer Paola Lenti. Inspired by the suite’s stunning sea and sky vistas, Lenti created a modern haven for the most discerning of guests, bathed in shades of calming blue and white. This well-appointed suite celebrates Lenti’s bold, artistic eye and offers 50sqm of indoor space, including a comfortable living room, bedroom, ample bathroom, and walk-in closet. The Azure Suite is underscored by its’ expansive front terrace which boasts views of Positano and Capri.
+    </p>
+    <h2 class="room-features">room features</h2>
+    <div class="blue-sidebar"></div>
+    <div class="stuff">sterrace
+        walk-in shower with separate bathtub<br>
+        walk-in closet<br> 
+        bang & olufsen tv<br>
+        apple tv<br>
+        dvd player<br>
+        apple iPad and notebook<br>
+        nespresso machine<br>
+        wi-fi internet connection<br>
+        
+    </div> 
+
+</body>
+<script>
+    const toggleBtn=document.getElementById("menu-toggle");
+    const navLinks=document.getElementById ("nav-links");
+    const closeBtn=document.getElementById("close-btn");
+    toggleBtn.addEventListener("click",()=>{
+navLinks.classList.toggle("show");
+});
+closeBtn.addEventListener("click",()=>{
+navLinks.classList.remove("show");
+    });
+    window.addEventListener("scroll",function(){
+            const imganimation = document.getElementById("imganimation");
+ const scrollY=window.scrollY; 
+if(scrollY>100){
+    imganimation.style.height="50vh";
+}
+else{
+    imganimation.style.height="100vh";
+        }
+    }
+    );
+</script>   
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>location</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
+    <body>
+        <header>
+            <button id="menu-toggle" class="menu-btn">&#9776;</button>
+            <nav id="nav-links">
+            <button id="close-btn" class="close-btn">&times;</button>  
+              <a href="/index.html">Hotel at a glance</a>
+              <a href="/location.html">location</a>
+              <a href="/suites.html">Suites</a>
+              <a href="/suites.html" class="submenu">-Angelina Suite</a>
+              <a href="/Azure.html" class="submenu">-Azure Suite</a>
+                <a href="/Vermarine.html" class="submenu">-Vermarine Suite</a>
+                <a href="/grand de luxe.html">Rooms</a>
+                <a href="/grand de luxe.html" class="submenu">- grand de luxe</a>
+                <a href="/deluxe corner sea view.html" class="submenu">- deluxe corner sea view</a>
+                  <a href="/relaxing.html" class="submenu">-relaxing</a>
+                  <a href="/classic.html" class="submenu">-classic</a>
+                <a href="/taste.html">Dining</a>
+                <a href="/taste.html" class="submenu">-tastes</a>
+                    <a href="/breakfast.html" class="submenu">-breakfast</a>
+                    <a href="/seascape casual dining.html" class="submenu">-seascape casual dining</a>
+                    <a href="/wine cellar.html" class="submenu">-wine cellar</a>
+            </nav>
+        </header>
+<h1 class="location">location</h1>
+
+<h2 class="oasis">an oasis of peace and quiet</h2>
+<div id="imganimation">
+<img src="https://wallpaperbat.com/img/615705-hd-desktop-wallpaper-of-maldives-desktop-wallpaper-of-ocean-resort.jpg" alt="oceanview" class="oceanview">
+</div>
+
+<div class="gem">
+  
+<h1 >A hidden gem
+    on the Amalfi Coast</h1>
+    <h2 class=>where serenity and style meet charm and authenticity</h2>
+    <p>Perched amongst lemon and olive tree overlooking the glittering teal green waters of the Tyrrhenian, Casa Angelina is a pristine seaside sanctuary marked by refined luxury, remarkable service, and quintessential Italian hospitality. Our perfectly positioned enclave between the bustling towns of Amalfi and Positano, carved into the cliffside near the quaint fishing village of Praiano, offers guests a relaxed retreat steeped in history, romance, and culture, with a contemporary twist.</p>
+
+        <p> Juxtaposed with our host community’s old-world charm and beauty, Casa Angelina is a minimalist oasis that strikes the right balance of the past and present with its’ sophisticated, modern comforts and sleek, white structures set against the ancient, craggy coast.
+        </p>
+        <div class="brown-sidebar"></div>
+    </div>
+    </body>
+    <script>
+        const toggleBtn=document.getElementById("menu-toggle");
+        const navLinks=document.getElementById ("nav-links");
+        const closeBtn=document.getElementById("close-btn");
+        toggleBtn.addEventListener("click",()=>{
+navLinks.classList.toggle("show");
+});
+closeBtn.addEventListener("click",()=>{
+navLinks.classList.remove("show");
+        });
+        window.addEventListener("scroll",function(){
+            const imganimation = document.getElementById("imganimation");
+ const scrollY=window.scrollY; 
+if(scrollY>100){
+    imganimation.style.height="50vh";
+}
+else{
+    imganimation.style.height="100vh";
+        }
+    }
+    );
+
+
+    </script>
+        </html>

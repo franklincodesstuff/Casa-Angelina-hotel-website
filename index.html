@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hotel Reviere</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+    <header>
+  <button id="menu-toggle" class="menu-btn">&#9776;</button>
+  <nav id="nav-links">
+  <button id="close-btn" class="close-btn">&times;</button>  
+    <a href="/index.html">Hotel at a glance</a>
+    <a href="/location.html">location</a>
+    <a href="/suites.html">Suites</a>
+    <a href="/suites.html" class="submenu">-Angelina Suite</a>
+  
+              <a href="/Azure.html" class="submenu">-Azure Suite</a>
+                <a href="/Vermarine.html" class="submenu">-Vermarine Suite</a>
+                <a href="/grand de luxe.html">Rooms</a>
+                <a href="/grand de luxe.html" class="submenu">- grand de luxe</a>
+                <a href="/deluxe corner sea view.html" class="submenu">- deluxe corner sea view</a>
+                  <a href="/relaxing.html" class="submenu">-relaxing</a>
+                  <a href="/classic.html" class="submenu">-classic</a>
+                <a href="/taste.html">Dining</a>
+                <a href="/taste.html" class="submenu">-tastes</a>
+                    <a href="/breakfast.html" class="submenu">-breakfast</a>
+                    <a href="/seascape casual dining.html" class="submenu">-seascape casual dining</a>
+                    <a href="/wine cellar.html" class="submenu">-wine cellar</a>
+  </nav>
+<h1 class="location">Find</h1>
+<h2 class="oasis">perfection.</h2>
+<div id="imganimation">
+  <img src="https://i.ytimg.com/vi/k7JlwbJyGo4/maxresdefault.jpg" alt="oceanview" class="oceanview">
+  </div>
+        <h1 class="location">Casa Angelina</h1>   
+        <h2 class="oasis">Tastemakers of understated chic luxury</h2>
+        <div class="sidebar">
+        <p class="gem">
+Sitting atop the curvaceous cliffs of Italy's Amalfi Coast, Casa Angelina offers a sublime slice of modern minimalism on the Mediterranean, with an emphasis on barefoot luxury and top-level gastronomy.
+</p>
+
+  <div class="blue-sidebar"></div>
+
+<p class="gem">
+Our 36-room hotel serves as a sanctuary, bearing a fresh, white-washed aesthetic that accentuates every space, from the azure sea and sky outside to the contemporary artworks on display inside.
+</p>\
+
+<p class="gem">
+We work to ensure everything about your stay is true perfection, from our welcome amenities and the thoughtful turndown services to the curated dishes from our chefs and activities organized by our concierge.</p>
+<h2 class="room-features">Ethos</h2>
+<p class="gem">Understated chic is our design ethos and subtle details are our raison d’être.
+</p>
+<p class="gem">We ensure everything about your stay is immaculate, from the pillowy white Etro cotton sheets dressing your bed to the thoughtfully-placed garden-grown herb garnishes on your plate.
+</p>
+</div>
+<script>
+        const toggleBtn=document.getElementById("menu-toggle");
+        const navLinks=document.getElementById ("nav-links");
+        const closeBtn=document.getElementById("close-btn");
+        toggleBtn.addEventListener("click",()=>{
+navLinks.classList.toggle("show");
+});
+closeBtn.addEventListener("click",()=>{
+navLinks.classList.remove("show");
+        });
+        window.addEventListener("scroll",function(){
+            const imganimation = document.getElementById("imganimation");
+ const scrollY=window.scrollY; 
+if(scrollY>100){
+    imganimation.style.height="50vh";
+}
+else{
+    imganimation.style.height="100vh";
+        }
+    });
+    </script>
+    </body>
+</html>
