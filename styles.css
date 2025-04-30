@@ -331,46 +331,30 @@ to {opacity: 1;}
 to {opacity: 1;}
     }
 @media (max-width: 768px) {
+    #nav-links {
+        width: 100%;
+        left: -100%; /* hide off screen */
+        font-size: 18px;
+    }
+
+    #nav-links.show {
+        left: 0; /* visible when toggled */
+    }
+
     .content-section {
         flex-direction: column;
-        padding: 20px;
+        padding: 10px;
         gap: 20px;
-    }
-
-    .text-column h1 {
-        font-size: 32px;
-    }
-
-    .text-column h2 {
-        font-size: 20px;
     }
 
     .image-column {
         grid-template-columns: 1fr;
-        gap: 10px;
+        padding: 0;
     }
 
     .secondary-images img {
         width: 100%;
         height: auto;
-    }
-
-    .Casa,
-    .location,
-    .Azure-suite {
-        font-size: 32px;
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    .Tastemakers,
-    .oasis,
-    .room-features,
-    .stuff,
-    .gem {
-        padding-left: 20px;
-        padding-right: 20px;
-        font-size: 16px;
     }
 
     #imganimation img,
@@ -385,14 +369,20 @@ to {opacity: 1;}
         display: none;
     }
 
-    .submenu,
-    .submenu2 {
-        margin-left: 10px;
-        font-size: 14px;
+    .Tastemakers,
+    .oasis,
+    .gem,
+    .stuff,
+    .room-features {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .Azure-suite,
-    .location {
+    .location,
+    .Casa {
+        padding-left: 0;
+        padding-right: 0;
         text-align: center;
     }
 }
