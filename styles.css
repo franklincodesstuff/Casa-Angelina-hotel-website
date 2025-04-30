@@ -377,7 +377,7 @@ to {opacity: 1;}
         padding-left: 20px;
         padding-right: 20px;
     }
-
+.location,
     .Azure-suite,
     .Casa {
         padding-left: 0;
@@ -386,7 +386,3 @@ to {opacity: 1;}
         text-align: center;
     }
 }
-     .location{
-         padding-left: 0;
-        padding-right: 0;
-        text-align: center;
