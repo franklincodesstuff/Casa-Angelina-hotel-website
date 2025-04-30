@@ -330,21 +330,69 @@ to {opacity: 1;}
 @keyframes fadeIn{
 to {opacity: 1;}
     }
-@media(max-width:768px){
-    #nav-links {
-        width: 100%;         /* full width menu */
-        right: 0;
-        font-size: 18px;     /* bigger text for touch screens */
-      }
-    
-      .hero-text {
-        font-size: 24px;     /* make titles smaller */
-        text-align: center;  /* center the text */
-      }
-    
-      img {
-        width: 100%;         /* images resize to fit screen */
+@media (max-width: 768px) {
+    .content-section {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .text-column h1 {
+        font-size: 32px;
+    }
+
+    .text-column h2 {
+        font-size: 20px;
+    }
+
+    .image-column {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .secondary-images img {
+        width: 100%;
         height: auto;
-        object-fit: cover;
-      }
+    }
+
+    .Casa,
+    .location,
+    .Azure-suite {
+        font-size: 32px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .Tastemakers,
+    .oasis,
+    .room-features,
+    .stuff,
+    .gem {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 16px;
+    }
+
+    #imganimation img,
+    #imganimation2 img {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .brown-sidebar,
+    .blue-sidebar {
+        display: none;
+    }
+
+    .submenu,
+    .submenu2 {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    .Azure-suite,
+    .location {
+        text-align: center;
+    }
 }
