@@ -335,6 +335,7 @@ to {opacity: 1;}
         width: 40%;
         left: -1000; /* hide off screen */
         font-size: 18px;
+        height:100vh;
     }
 
     #nav-links.show {
